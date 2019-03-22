@@ -1,0 +1,63 @@
+Entities\Userdetails:
+    type: entity
+    table: userdetails
+    fields:
+        id:
+            id: true
+            type: integer
+            unsigned: false
+            nullable: false
+            generator:
+                strategy: IDENTITY
+        accountname:
+            type: string
+            length: 100
+            fixed: false
+            nullable: true
+            column: accountName
+        accountholdername:
+            type: string
+            length: 100
+            fixed: false
+            nullable: false
+            column: accountHolderName
+        accountholderemail:
+            type: string
+            length: 100
+            fixed: false
+            nullable: false
+            column: accountHolderEmail
+        accountholderphonenumber:
+            type: string
+            length: 15
+            fixed: false
+            nullable: false
+            column: accountHolderPhoneNumber
+        accountpassword:
+            type: string
+            length: 250
+            fixed: false
+            nullable: false
+            column: accountPassword
+        accountactivestatus:
+            type: string
+            length: 10
+            fixed: false
+            nullable: false
+            column: accountActiveStatus
+        accountcreateddate:
+            type: datetime
+            nullable: false
+            column: accountCreatedDate
+        accountroleid:
+            type: integer
+            unsigned: false
+            nullable: false
+            column: accountRoleId
+        accountcreatedby:
+            type: string
+            length: 100
+            fixed: false
+            nullable: true
+            column: accountCreatedBy
+    lifecycleCallbacks: {  }

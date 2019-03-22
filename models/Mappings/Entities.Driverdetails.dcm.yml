@@ -1,0 +1,46 @@
+Entities\Driverdetails:
+    type: entity
+    table: driverdetails
+    fields:
+        id:
+            id: true
+            type: integer
+            unsigned: false
+            nullable: false
+            generator:
+                strategy: IDENTITY
+        drivername:
+            type: string
+            length: 80
+            fixed: false
+            nullable: false
+            column: driverName
+        drivernumber:
+            type: string
+            length: 15
+            fixed: false
+            nullable: false
+            column: driverNumber
+        drivercreatedby:
+            type: string
+            length: 30
+            fixed: false
+            nullable: false
+            column: driverCreatedBy
+        driverallocdeviceid:
+            type: string
+            length: 20
+            fixed: false
+            nullable: true
+            column: driverAllocDeviceId
+        driverallocvehicleplatenumber:
+            type: string
+            length: 30
+            fixed: false
+            nullable: true
+            column: driverAllocVehiclePlateNumber
+        drivercreateddate:
+            type: datetime
+            nullable: true
+            column: driverCreatedDate
+    lifecycleCallbacks: {  }

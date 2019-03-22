@@ -1,0 +1,201 @@
+Entities\TblGpsdata:
+    type: entity
+    table: tbl_gpsdata
+    fields:
+        colId:
+            id: true
+            type: integer
+            unsigned: false
+            nullable: false
+            column: col_id
+            generator:
+                strategy: IDENTITY
+        colHeader:
+            type: string
+            length: 4
+            fixed: true
+            nullable: true
+            column: col_header
+        colVendorId:
+            type: smallint
+            nullable: true
+            column: col_vendor_id
+        colFirmVersion:
+            type: string
+            length: 10
+            fixed: false
+            nullable: true
+            column: col_firm_version
+        colDeviceId:
+            type: string
+            length: 16
+            fixed: false
+            nullable: false
+            column: col_device_id
+        colFrameNo:
+            type: integer
+            unsigned: true
+            nullable: true
+            column: col_frame_no
+        colPacketType:
+            type: string
+            length: 2
+            fixed: true
+            nullable: false
+            column: col_packet_type
+        colPacketStatus:
+            type: string
+            length: 1
+            fixed: true
+            nullable: false
+            column: col_packet_status
+        colTimestamp:
+            type: datetime
+            nullable: false
+            column: col_timestamp
+        colLat:
+            type: decimal
+            nullable: false
+            column: col_lat
+        colLatDir:
+            type: string
+            length: 1
+            fixed: true
+            nullable: true
+            column: col_lat_dir
+        colLng:
+            type: decimal
+            nullable: false
+            column: col_lng
+        colLngDir:
+            type: string
+            length: 1
+            fixed: true
+            nullable: true
+            column: col_lng_dir
+        colVehicleRegNo:
+            type: string
+            length: 50
+            fixed: false
+            nullable: true
+            column: col_vehicle_reg_no
+        colGpsStatus:
+            type: boolean
+            nullable: false
+            column: col_gps_status
+        colSpeed:
+            type: decimal
+            nullable: true
+            column: col_speed
+        colHeading:
+            type: string
+            length: 45
+            fixed: false
+            nullable: true
+            column: col_heading
+        colNoOfSatellites:
+            type: boolean
+            nullable: true
+            column: col_no_of_satellites
+        colAltitude:
+            type: integer
+            unsigned: true
+            nullable: true
+            column: col_altitude
+        colNetworkOp:
+            type: string
+            length: 10
+            fixed: false
+            nullable: true
+            column: col_network_op
+        colIgnition:
+            type: boolean
+            nullable: false
+            column: col_ignition
+        colPwrStatus:
+            type: boolean
+            nullable: true
+            column: col_pwr_status
+        colInputVolt:
+            type: decimal
+            nullable: true
+            column: col_input_volt
+        colBatteryVolt:
+            type: decimal
+            nullable: true
+            column: col_battery_volt
+        colEmergencyStatus:
+            type: boolean
+            nullable: true
+            column: col_emergency_status
+        colTamperAlert:
+            type: string
+            length: 1
+            fixed: true
+            nullable: true
+            column: col_tamper_alert
+        colGsm:
+            type: boolean
+            nullable: true
+            column: col_gsm
+        colMcc:
+            type: smallint
+            nullable: true
+            column: col_mcc
+        colMnc:
+            type: boolean
+            nullable: true
+            column: col_mnc
+        colLac:
+            type: string
+            length: 4
+            fixed: false
+            nullable: true
+            column: col_lac
+        colCid:
+            type: string
+            length: 4
+            fixed: false
+            nullable: true
+            column: col_cid
+        colNmr:
+            type: boolean
+            nullable: true
+            column: col_nmr
+        colDIp1:
+            type: boolean
+            nullable: true
+            column: col_d_ip1
+        colDIp2:
+            type: boolean
+            nullable: true
+            column: col_d_ip2
+        colDIp3:
+            type: boolean
+            nullable: true
+            column: col_d_ip3
+        colDIp4:
+            type: boolean
+            nullable: true
+            column: col_d_ip4
+        colDOp1:
+            type: boolean
+            nullable: true
+            column: col_d_op1
+        colDOp2:
+            type: boolean
+            nullable: true
+            column: col_d_op2
+        colDOp3:
+            type: boolean
+            nullable: true
+            column: col_d_op3
+        colDOp4:
+            type: boolean
+            nullable: true
+            column: col_d_op4
+        colCreatedDt:
+            type: datetime
+            nullable: true
+            column: col_created_dt
+    lifecycleCallbacks: {  }

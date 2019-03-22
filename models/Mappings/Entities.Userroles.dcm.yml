@@ -1,0 +1,19 @@
+Entities\Userroles:
+    type: entity
+    table: userroles
+    fields:
+        roleid:
+            id: true
+            type: integer
+            unsigned: false
+            nullable: false
+            column: roleId
+            generator:
+                strategy: IDENTITY
+        rolename:
+            type: string
+            length: 50
+            fixed: false
+            nullable: true
+            column: roleName
+    lifecycleCallbacks: {  }

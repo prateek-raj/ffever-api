@@ -1,0 +1,89 @@
+Entities\Devicedetails:
+    type: entity
+    table: devicedetails
+    fields:
+        id:
+            id: true
+            type: integer
+            unsigned: false
+            nullable: false
+        deviceid:
+            id: true
+            type: string
+            length: 20
+            fixed: false
+            nullable: false
+            column: deviceID
+        deviceimei:
+            type: string
+            length: 20
+            fixed: false
+            nullable: false
+            column: deviceIMEI
+        devicesimserialnumber:
+            type: string
+            length: 20
+            fixed: false
+            nullable: false
+            column: deviceSIMSerialNumber
+        devicesimphonenumber:
+            type: string
+            length: 20
+            fixed: false
+            nullable: false
+            column: deviceSIMPhoneNumber
+        devicecreatedby:
+            type: string
+            length: 100
+            fixed: false
+            nullable: false
+            column: deviceCreatedBy
+        devicecreatedfor:
+            type: string
+            length: 100
+            fixed: false
+            nullable: false
+            column: deviceCreatedFor
+        devicevehicleplatenumber:
+            type: string
+            length: 50
+            fixed: false
+            nullable: false
+            column: deviceVehiclePlateNumber
+        devicevehicletype:
+            type: string
+            length: 50
+            fixed: false
+            nullable: false
+            column: deviceVehicleType
+        deviceaddeddate:
+            type: datetime
+            nullable: false
+            column: deviceAddedDate
+        devicesubscriptiontilldate:
+            type: datetime
+            nullable: false
+            column: deviceSubscriptionTillDate
+        deviceodometerreading:
+            type: float
+            nullable: true
+            column: deviceOdometerReading
+        deviceactivestatus:
+            type: string
+            length: 10
+            fixed: false
+            nullable: true
+            column: deviceActiveStatus
+        devicesubuser:
+            type: string
+            length: 100
+            fixed: false
+            nullable: true
+            column: deviceSubUser
+        devicelistener:
+            type: string
+            length: 2
+            fixed: true
+            nullable: true
+            column: deviceListener
+    lifecycleCallbacks: {  }

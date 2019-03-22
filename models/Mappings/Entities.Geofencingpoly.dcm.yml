@@ -1,0 +1,34 @@
+Entities\Geofencingpoly:
+    type: entity
+    table: geofencingpoly
+    fields:
+        id:
+            id: true
+            type: integer
+            unsigned: false
+            nullable: false
+            generator:
+                strategy: IDENTITY
+        accountname:
+            type: string
+            length: 100
+            fixed: false
+            nullable: false
+            column: accountName
+        geofencingname:
+            type: string
+            length: 100
+            fixed: false
+            nullable: false
+            column: geofencingName
+        geofencinglatlngarray:
+            type: string
+            length: 300
+            fixed: false
+            nullable: false
+            column: geofencingLatLngArray
+        geofencecreateddate:
+            type: datetime
+            nullable: true
+            column: geofenceCreatedDate
+    lifecycleCallbacks: {  }
